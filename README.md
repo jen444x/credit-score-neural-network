@@ -19,13 +19,13 @@ This project implements a deep learning solution for credit score classification
 
 ### Architecture Enhancement
 - **Optimized Network**: Redesigned from 24→48→96→96→48→3 to **32→64→128→128→64→3**
-- **Feature Expansion**: Increased input features from 24 to 32 dimensions
+- **Feature Engineering**: Expanded from 28 to 32 input dimensions through preprocessing
 - **Training Optimization**: Fine-tuned epochs and batch size for optimal convergence
 
 ### Advanced Data Pipeline
 - **Sophisticated Preprocessing**: Implemented custom data cleaning functions
 - **Feature Engineering**: Enhanced categorical encoding and numerical standardization
-- **Missing Value Handling**: Intelligent imputation strategies for 80K+ records
+- **Missing Value Handling**: Intelligent imputation strategies
 
 ### Comprehensive Evaluation
 - **Multi-class Classification**: Handles Good/Poor/Standard credit scores
@@ -35,9 +35,13 @@ This project implements a deep learning solution for credit score classification
 ## 🛠️ Technical Implementation
 
 ### Dataset
-- **Size**: 80,000 customer records
-- **Features**: 29 original features → 32 engineered features
-- **Target**: 3-class credit score classification (Good, Poor, Standard)
+This project uses the **Credit Score Classification Dataset** by Rohan Paris.
+
+- **Source:** [Kaggle - Credit Score Classification Dataset](https://www.kaggle.com/datasets/parisrohan/credit-score-classification)
+- **Author:** Rohan Paris
+- **Year:** 2022
+- **Size:** 80,000 records used for training (from 100,000 total), 28 input features + 1 target variable
+- **Description:** Synthetic dataset containing banking and credit information for credit score classification (Good, Standard, Poor)
 
 ### Model Architecture
 ```python
